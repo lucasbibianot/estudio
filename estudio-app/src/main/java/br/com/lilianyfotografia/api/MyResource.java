@@ -1,4 +1,4 @@
-package br.com.lilianyfotografia;
+package br.com.lilianyfotografia.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
