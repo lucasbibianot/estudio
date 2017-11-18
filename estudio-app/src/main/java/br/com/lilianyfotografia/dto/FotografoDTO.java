@@ -1,4 +1,4 @@
-package br.com.lilianyfotografia;
+package br.com.lilianyfotografia.dto;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -10,6 +10,10 @@ public class FotografoDTO {
 	private Long idFotografo;
 	private String nomeFotografo;
 
+	public FotografoDTO() {
+		super();
+	}
+	
 	public FotografoDTO(Long idFotografo, String nomeFotografo) {
 		super();
 		this.idFotografo = idFotografo;
