@@ -11,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 import br.com.lilianyfotografia.dao.FotografoDAO;
 import br.com.lilianyfotografia.dto.FotografoDTO;
 import br.com.lilianyfotografia.entidades.Fotografo;
+import br.com.lilianyfotografia.security.annotations.JWTTokenNeeded;
 
 @Path("fotografo-api")
 @RequestScoped
@@ -22,6 +23,7 @@ public class FotografoAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/fotografo/{codigo}")
+	@JWTTokenNeeded
 	public FotografoDTO GetPessoa(@PathParam("codigo") Long codigo) {
 
 		Fotografo entity = dao.getFotografo(codigo);
